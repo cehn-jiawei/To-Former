@@ -9,8 +9,7 @@ import torch.distributed as dist
 import torch.optim as optim
 from torch.utils.data import DataLoader
 
-from nets.segformer_convnext import SegFormer
-#from nets.segformer import SegFormer
+from nets.toformer import SegFormer
 from nets.segformer_training import (get_lr_scheduler, set_optimizer_lr,weights_init)
 from utils.callbacks import LossHistory, EvalCallback
 from utils.dataloader import SegmentationDataset, seg_dataset_collate
